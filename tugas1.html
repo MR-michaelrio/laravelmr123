@@ -1,0 +1,172 @@
+<style>
+    @import url('https://font.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe0fa;
+}
+
+h2, h3, h4{
+    color: #fa66e1;
+}
+
+header{
+    display: inline;
+}
+
+.jumbotron{
+    font-size: 20px;
+    padding: 60px;
+    background-color: #ff99ee;
+    text-align: center;
+    color: white;
+}
+
+nav{
+    background-color: #fa66e1;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    font-weight: bold;
+}
+
+nav li{
+    display: inline;
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+footer{
+    padding: 20px;
+    color: white;
+    background-color: #fa66e1;
+    text-align: center;
+    font-weight: bold;
+}
+
+main{
+    padding:20px;
+    overflow: auto;
+}
+
+#content{
+    float: left;
+    width: 75%;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fcd2f5;
+}
+
+aside{
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.image{
+    width:100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media screen and (max-width: 1000px){
+    #content, aside{
+        width: 100%;
+        padding: 0;
+    }
+}
+</style>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Biodata Diri</title>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    </head>
+    <body>
+        <header>
+            <div class="jumbotron">
+                <h1>Michael Rio Agustino Tan</h1>
+                <p>Mahluk yang hidup yang suka berbagi informasi dengan orang lain dan suka menolong orang lain.</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#language">Language</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="content">
+                <article class=card id="about">
+                    <h2>About</h2>
+                    <img src="1.jpg" class=image alt=about>
+                    <p>
+                        Saya Lahir pada 17 Agustus 2003 di Subang. Saya biasa dipanggil mr, emer, mer, mekel.
+                        Hobi saya adalah menonton film drakor dan anime.
+                        Keseharian saya hanya bangun belajar nonton makan.
+                    </p>
+                </article>
+                <article class=card id="education">
+                    <h2>Education</h2>
+                    <img src="2.jpg" class=image alt=education>
+                    <p>
+                        Pada 2018 saya tamat SMP di PahTsung Yaitu sekolah tetangga kita.
+                        Pada 2015 saya tamat sd di Tzu Chi yaitu sekolah saya sekarang.
+                    </p>
+                </article>
+                <article class=card id="skill">
+                    <h2>Skill</h2>
+                    <img src="3.jpg" class=image alt=education>
+                    <p>
+                        Skill yang saya punyai adalah mengedit video dan foot
+                        fotografi dan videografi
+                        dan sedang tahap menjadi seorang programer
+                    </p>
+                </article>
+            </div>
+            <aside>
+            <article class="card" id="language">
+                <h2>Language</h2>
+                <img src="4.jpg" class=image alt=language>
+                <p>
+                    Bahasa yang saya bisa adalah Indonesia pastinya
+                    lalu sedikit bisa bahasa Mandarin dan Inggris
+                    dan hanya bisa sedikit mengerti bahasa Jepang dan Korea
+                </p>
+            </article>
+            </aside>
+        </main>
+
+        <footer>
+            <p>Produk Kreatif dan Kewirausahaan &#169; 2020, SMK Cinta Kasih Tzu Chi</p>
+        </footer>
+    </body>
+</html>
